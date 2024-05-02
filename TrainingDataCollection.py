@@ -1,10 +1,6 @@
-# Importing the Libraries Required
-
 import cv2
 import numpy as np
 import os
-
-# Creating and Collecting Training Data
 
 mode = 'trainingData'
 directory = 'dataSet/' + mode + '/'
@@ -15,12 +11,7 @@ interrupt = -1
 
 while True:
     _, frame = capture.read()
-
-    # Simulating mirror Image
-
     frame = cv2.flip(frame, 1)
-
-    # Getting count of existing images
 
     count = {
                 'zero': len(os.listdir(directory+"/0")),
