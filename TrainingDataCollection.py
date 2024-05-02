@@ -44,10 +44,7 @@ while True:
                 'z': len(os.listdir(directory+"/Z")),
     }
 
-    # Printing the count of each set on the screen
-    
     cv2.putText(frame, "ZERO : " +str(count['zero']), (10, 60), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    
     cv2.putText(frame, "a : " +str(count['a']), (10, 70), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.putText(frame, "b : " +str(count['b']), (10, 80), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.putText(frame, "c : " +str(count['c']), (10, 90), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
@@ -74,20 +71,13 @@ while True:
     cv2.putText(frame, "y : " +str(count['y']), (10, 300), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.putText(frame, "z : " +str(count['z']), (10, 310), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
 
-    # Coordinates of the ROI
-    
     x1 = int(0.5*frame.shape[1])
     y1 = 10
     x2 = frame.shape[1]-10
     y2 = int(0.5*frame.shape[1])
 
-    # Drawing the ROI
-    # The increment/decrement by 1 is to compensate for the bounding box
-    
     cv2.rectangle(frame, (x1-1, y1-1), (x2+1, y2+1), (255,0,0) ,1)
-    
-    # Extracting the ROI
-    
+   
     roi = frame[y1:y2, x1:x2]
 
     cv2.imshow("Frame", frame)
