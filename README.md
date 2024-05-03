@@ -1,6 +1,6 @@
 # NIRMAN Bring ideas to Life 2024 
 
-# SignoSpeak
+# SignoSpeak: Bridging the Gap
 
 ## Problem Statement
 
