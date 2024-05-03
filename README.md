@@ -1,12 +1,63 @@
 # NIRMAN Bring ideas to Life 2024 
 
-# SignoSpeak: Bridging the Gap
+# SignoSpeak
 
-# Problem Statement
-Smart Innovation with AI/ML
+SignoSpeak is a real-time sign language detection application built using a Convolutional Neural Network (CNN) model. It allows users to communicate using sign language gestures, which are captured through a webcam and translated into text.
 
-Mute people use hand signs to communicate, hence normal people face problem in recognizing their language by signs made. Hence there is a need of the systems which recognizes the different signs and conveys the information to the normal people
+## Features
 
-# Solution
+- Real-time sign language detection
+- Converts sign language gestures into text
+- Supports a wide range of sign language gestures
+- Easy-to-use graphical user interface (GUI)
 
-The objective of this project is to develop a robust system capable of accurately recognizing and converting American Sign Language (ASL) gestures representing the 26 alphabets into text. Leveraging Convolutional Neural Networks (CNN) implemented using TensorFlow and OpenCV, the system will analyze input images or video streams captured in real-time through cameras. The CNN model will be trained on a dataset containing a comprehensive collection of ASL alphabet gestures to learn and recognize the unique patterns associated with each sign. The system will then translate the recognized gestures into corresponding textual representations, facilitating communication for individuals with hearing impairments. The key challenges include designing an efficient CNN architecture, preprocessing input images to enhance feature extraction, and optimizing the model's accuracy and performance. By providing a reliable ASL-to-text conversion tool, this project aims to enhance accessibility and promote effective communication for the deaf and hard of hearing community.
+## Requirements
+
+- Python 3.x
+- OpenCV
+- Keras
+- Tkinter
+- PIL (Python Imaging Library)
+
+## Installation
+
+1. Clone the SignoSpeak repository:
+
+   ```
+   git clone https://github.com/your-username/SignoSpeak.git
+   ```
+
+2. Install the required Python packages:
+
+   ```
+   pip install opencv-python keras pillow
+   ```
+
+## Usage
+
+1. Navigate to the SignoSpeak directory:
+
+   ```
+   cd SignoSpeak
+   ```
+
+2. Run the SignoSpeak application:
+
+   ```
+   python Application.py
+   ```
+
+3. The SignoSpeak GUI will open, displaying the webcam feed. Make sign language gestures in front of the webcam, and the application will detect and translate them into text.
+
+## Credits
+
+This application uses a pre-trained CNN model for sign language detection. The model was trained on a dataset of sign language gestures and achieves high accuracy in real-time detection.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Special thanks to [Author Name] for creating and training the CNN model used in this application.
+- This project was inspired by the need to bridge communication gaps between hearing-impaired individuals and the broader community.
